@@ -89,10 +89,11 @@ const translationsEN = {
         "role": "Software Engineer",
         "member1": "Software Engineering student with a passion for cybersecurity and AI. My main strength is leading teams effectively. I am a perseverant and dedicated individual, always ready to learn and deliver a successful project.",
         "member2": "Software Engineering student. I am a collaborative and adaptable team player who enjoys contributing ideas to projects. I have a strong foundation in languages like C++ and Python and always seek efficient, simple solutions.",
-        "member3": "A curious and committed Software Engineering student at UPC, with experience in project management and agile methodologies. I have a strong focus on web development and data analysis. I'm eager to help guide the project to success.",
+        "member3": "Software Engineering student experienced in full-stack development with React, TypeScript, Spring Boot, and MySQL. Strong in building scalable applications using DDD and RESTful APIs, with interest in cloud computing, data analysis, and agile development practices.",
         "member4": "A punctual, responsible, and goal-oriented individual with experience in project management and web development. I'm focused on contributing my knowledge to make this project a success.",
-        "member5": "A Software Engineering student with knowledge in C++, OOP, and web design. My contribution to the team is my commitment to punctuality, research, and creative problem-solving to ensure a great project outcome.",
-        "member6": "Software Engineering student currently in my fifth semester. I have knowledge in C++ and databases, which allows me to contribute to the development of digital solutions for the project."
+        "member5": "Software Engineering student in the seventh semester at UPC. Empathetic and communicative team player with strong collaboration skills. Enjoys music, video games, and sports, with a positive attitude toward teamwork and continuous personal development.",
+        "member6": "Software Engineering student in the seventh semester, responsible and proactive, with strong learning ability. Focused on continuous improvement, taking on new challenges, and contributing creative solutions, with a positive, results-oriented mindset.",
+        "member7": "Software Engineering student in the seventh semester, responsible and proactive, with strong learning ability. Focused on continuous improvement, taking on new challenges, and contributing creative solutions, with a positive, results-oriented mindset."
     },
     "plans": {
         "button": "Plans",

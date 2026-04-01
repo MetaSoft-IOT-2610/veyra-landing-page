@@ -89,10 +89,11 @@ const translationsES = {
         "role": "Ingeniero de Software",
         "member1": "Estudiante de Ingeniería de Software con pasión por la ciberseguridad y la IA. Mi principal fortaleza es liderar equipos de manera efectiva. Soy una persona perseverante y dedicada, siempre lista para aprender y entregar un proyecto exitoso.",
         "member2": "Estudiante de Ingeniería de Software. Soy un jugador de equipo colaborativo y adaptable que disfruta contribuyendo con ideas a los proyectos. Tengo una base sólida en lenguajes como C++ y Python y siempre busco soluciones eficientes y simples.",
-        "member3": "Estudiante de Ingeniería de Software curiosa y comprometida en la UPC, con experiencia en gestión de proyectos y metodologías ágiles. Tengo un fuerte enfoque en el desarrollo web y el análisis de datos. Estoy ansiosa por ayudar a guiar el proyecto hacia el éxito.",
+        "member3": "Estudiante de Ingeniería de Software con experiencia en desarrollo full-stack utilizando React, TypeScript, Spring Boot y MySQL. Sólido en la construcción de aplicaciones escalables con DDD y APIs RESTful, con interés en computación en la nube, análisis de datos y metodologías ágiles.",
         "member4": "Un individuo puntual, responsable y orientado a objetivos con experiencia en gestión de proyectos y desarrollo web. Estoy enfocado en contribuir con mis conocimientos para que este proyecto sea un éxito.",
-        "member5": "Estudiante de Ingeniería de Software con conocimientos en C++, POO y diseño web. Mi contribución al equipo es mi compromiso con la puntualidad, la investigación y la resolución creativa de problemas para asegurar un gran resultado del proyecto.",
-        "member6": "Estudiante de Ingeniería de Software y actualmente curso mi quinto ciclo. Tengo conocimientos de C++ y bases de datos, lo que me permite contribuir al desarrollo de soluciones digitales para el proyecto."
+        "member5": "Estudiante de Ingeniería de Software en séptimo ciclo en la UPC. Persona empática y comunicativa, con facilidad para el trabajo en equipo. Disfruta la música, los videojuegos y el deporte, con actitud positiva y enfoque en su desarrollo personal.",
+        "member6": "Estudiante de Ingeniería de Software en séptimo ciclo, responsable y proactivo, con gran capacidad de aprendizaje. Enfocado en la mejora continua, asumir nuevos retos y aportar soluciones creativas, con una mentalidad positiva y orientada a resultados.",
+        "member7": "Software Engineering student in the seventh semester, responsible and proactive, with strong learning ability. Focused on continuous improvement, taking on new challenges, and contributing creative solutions, with a positive, results-oriented mindset."
     },
     "plans": {
         "button": "Planes",
