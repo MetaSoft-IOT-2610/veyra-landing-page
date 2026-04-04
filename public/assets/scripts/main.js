@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function setLanguage(lang) {
+        document.body.setAttribute('data-lang-active', lang);
         const t = translations[lang];
 
         document.querySelectorAll('[data-i18n]').forEach(element => {
