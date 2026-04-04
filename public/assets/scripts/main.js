@@ -99,6 +99,55 @@ document.addEventListener('DOMContentLoaded', function() {
         copyrightEl.textContent = 'Copyright © ' + new Date().getFullYear() + ' Metasoft';
     }
 
+    // Legal Drawers
+    const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawers = document.querySelectorAll('.legal-drawer');
+
+    function openDrawer(drawerId) {
+        const drawer = document.getElementById(drawerId);
+        if (!drawer) return;
+        drawers.forEach(d => d.classList.remove('active'));
+        drawer.classList.add('active');
+        drawerOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        const body = drawer.querySelector('.drawer-body');
+        if (drawer.dataset.loaded) return;
+
+        fetch(drawer.dataset.src)
+            .then(res => res.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const article = doc.querySelector('.terms-content');
+                body.innerHTML = article ? article.innerHTML : '<p>Content could not be loaded.</p>';
+                drawer.dataset.loaded = 'true';
+            })
+            .catch(() => {
+                body.innerHTML = '<p>Content could not be loaded.</p>';
+            });
+    }
+
+    function closeDrawers() {
+        drawers.forEach(d => d.classList.remove('active'));
+        drawerOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.drawer-trigger').forEach(btn => {
+        btn.addEventListener('click', () => openDrawer(btn.dataset.drawer));
+    });
+
+    document.querySelectorAll('.drawer-close').forEach(btn => {
+        btn.addEventListener('click', closeDrawers);
+    });
+
+    drawerOverlay.addEventListener('click', closeDrawers);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDrawers();
+    });
+
     const toggleButtons = document.querySelectorAll('.plan-toggle .toggle-btn');
     const monthlyElements = document.querySelectorAll('.monthly-price, .plan-card .price .monthly-price span, .plan-card .features h4');
     const annuallyElements = document.querySelectorAll('.annually-price, .annual-save, .plan-card .price .annually-price span');

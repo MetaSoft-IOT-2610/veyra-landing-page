@@ -383,8 +383,8 @@
     <div class="copyright">
         <p id="footer-copyright"></p>
         <div class="legal-links">
-            <a href="public/sections/tos.html" data-i18n="footer.legal.terms" target="_blank">Terms of Service</a>
-            <a href="public/sections/policies.html" data-i18n="footer.legal.privacy" target="_blank">Privacy Policy</a>
+            <button class="drawer-trigger" data-drawer="drawer-tos" data-i18n="footer.legal.terms">Terms of Service</button>
+            <button class="drawer-trigger" data-drawer="drawer-privacy" data-i18n="footer.legal.privacy">Privacy Policy</button>
         </div>
     </div>
 </footer>
@@ -392,6 +392,29 @@
 
 <!-- Scroll To Top Button -->
 <button id="scroll-top-btn" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- Legal Drawer Overlay -->
+<div id="drawer-overlay"></div>
+
+<!-- Terms of Service Drawer -->
+<div class="legal-drawer" id="drawer-tos" role="dialog" aria-modal="true" aria-label="Terms of Service" data-src="public/sections/tos.html">
+    <div class="drawer-header">
+        <h2>Terms of Service</h2>
+        <a href="public/sections/tos.html" target="_blank" class="drawer-external-link" aria-label="Open full page"><i class="fas fa-external-link-alt"></i></a>
+        <button class="drawer-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-body"><span class="drawer-loader"><i class="fas fa-spinner fa-spin"></i></span></div>
+</div>
+
+<!-- Privacy Policy Drawer -->
+<div class="legal-drawer" id="drawer-privacy" role="dialog" aria-modal="true" aria-label="Privacy Policy" data-src="public/sections/policies.html">
+    <div class="drawer-header">
+        <h2>Privacy Policy</h2>
+        <a href="public/sections/policies.html" target="_blank" class="drawer-external-link" aria-label="Open full page"><i class="fas fa-external-link-alt"></i></a>
+        <button class="drawer-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-body"><span class="drawer-loader"><i class="fas fa-spinner fa-spin"></i></span></div>
+</div>
 
 <!-- JavaScript Dependencies -->
 <script src="public/assets/scripts/translations/en.js"></script>
