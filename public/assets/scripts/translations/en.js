@@ -148,23 +148,22 @@ const translationsEN = {
         "button": "Subscribe"
     },
     "footer": {
-        "subscribe": {
-            "heading": "Subscribe for a Connected Care Experience",
-            "placeholder": "Enter your email address",
-            "button": "Contact Us"
+        "tagline": "Connecting families and caregivers.",
+        "platform": {
+            "heading": "Platform"
         },
-        "links1": {
-            "heading": "About",
-            "link1": "Collaborate",
-            "link2": "Community",
-            "link3": "Help Center"
+        "company": {
+            "heading": "Company",
+            "link1": "About Us",
+            "link2": "Help Center",
+            "link3": "Community"
         },
-        "links2": {
+        "contact": {
             "heading": "Contact",
             "phone": "+1 (555) 482-9599",
             "location": "UPC Lima - Perú"
         },
-        "copyright": "Copyright © 2025 NovaPeru Tech",
+        "copyright": "Copyright © 2025 Metasoft",
         "legal": {
             "terms": "Terms of Service",
             "privacy": "Privacy Policy"

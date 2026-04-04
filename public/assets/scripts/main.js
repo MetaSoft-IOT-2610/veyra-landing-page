@@ -94,6 +94,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const copyrightEl = document.getElementById('footer-copyright');
+    if (copyrightEl) {
+        copyrightEl.textContent = 'Copyright © ' + new Date().getFullYear() + ' Metasoft';
+    }
+
     const toggleButtons = document.querySelectorAll('.plan-toggle .toggle-btn');
     const monthlyElements = document.querySelectorAll('.monthly-price, .plan-card .price .monthly-price span, .plan-card .features h4');
     const annuallyElements = document.querySelectorAll('.annually-price, .annual-save, .plan-card .price .annually-price span');

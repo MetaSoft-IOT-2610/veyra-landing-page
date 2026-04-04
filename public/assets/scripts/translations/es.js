@@ -148,23 +148,22 @@ const translationsES = {
         "button": "Suscribirse"
     },
     "footer": {
-        "subscribe": {
-            "heading": "Suscríbete para una Experiencia de Cuidado Conectado",
-            "placeholder": "Introduce tu dirección de correo electrónico",
-            "button": "Contáctanos"
+        "tagline": "Conectando familias y cuidadores.",
+        "platform": {
+            "heading": "Plataforma"
         },
-        "links1": {
-            "heading": "Acerca de",
-            "link1": "Colaborar",
-            "link2": "Comunidad",
-            "link3": "Centro de ayuda"
+        "company": {
+            "heading": "Empresa",
+            "link1": "Acerca de Nosotros",
+            "link2": "Centro de Ayuda",
+            "link3": "Comunidad"
         },
-        "links2": {
+        "contact": {
             "heading": "Contacto",
             "phone": "+1 (555) 482-9599",
             "location": "UPC Lima - Perú"
         },
-        "copyright": "Copyright © 2025 NovaPeru Tech",
+        "copyright": "Copyright © 2025 Metasoft",
         "legal": {
             "terms": "Términos de Servicio",
             "privacy": "Política de Privacidad"

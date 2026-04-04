@@ -941,95 +941,85 @@ section {
 .footer {
     background: var(--bg-dark);
     color: var(--text-light);
-    padding: 5rem 9%;
+    padding: 5rem 9% 3rem;
     max-width: none;
     margin: 0;
 }
 
-.footer .top-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 3rem;
     margin-bottom: 3rem;
 }
 
-.footer .top-footer .subscribe-text h2 {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.footer .top-footer .subscribe-form {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer .top-footer .subscribe-form input {
-    background: #333;
-    border-radius: 5rem;
-    padding: 1rem 2rem;
-    font-size: 1.6rem;
-    color: var(--text-light);
-    border: none;
-}
-
-.footer .top-footer .subscribe-form .subscribe-btn {
-    background: var(--primary-color);
-    color: var(--text-light);
-    padding: 1.2rem 2.5rem;
-    font-size: 1.6rem;
-    cursor: pointer;
-    border-radius: 5rem;
-}
-
-.footer .top-footer .subscribe-form .subscribe-btn:hover {
-    background: var(--secondary-color);
-}
-
-.footer .bottom-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-
-.footer .footer-logo {
+.footer-brand .footer-logo {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.footer .footer-logo img {
+.footer-brand .footer-logo img {
     width: 5rem;
 }
 
-.footer .footer-logo p {
+.footer-brand .footer-logo p {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.footer .footer-links {
-    display: flex;
-    gap: 5rem;
-    flex-wrap: wrap;
-}
-
-.footer .footer-links .column h4 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-}
-
-.footer .footer-links .column a,
-.footer .footer-links .column p {
-    display: block;
+.footer-tagline {
     font-size: 1.4rem;
-    color: #ccc;
-    margin-bottom: 1rem;
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 24rem;
 }
 
-.footer .footer-links .column a:hover {
+.footer-socials {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.footer-socials a {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.footer-socials a:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.footer-col h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-col a,
+.footer-col p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-bottom: 1.2rem;
+}
+
+.footer-col a:hover {
     color: var(--primary-color);
 }
 
@@ -1037,7 +1027,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5rem;
     font-size: 1.4rem;
     color: #ccc;
 }
@@ -1049,6 +1038,25 @@ section {
 
 .footer .copyright .legal-links a:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .copyright {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
 }
 
 /* Terms Page */
@@ -1141,17 +1149,9 @@ section {
         margin-bottom: 2rem;
     }
 
-    .footer .bottom-footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin-top: 2rem;
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
     }
 }
 
