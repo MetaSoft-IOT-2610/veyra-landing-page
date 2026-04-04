@@ -11,17 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
     setLanguage(currentLang);
 
     if (languageSelector) {
-        languageSelector.addEventListener('click', (e) => {
-            const button = e.target.closest('.lang-btn');
-            if (button) {
-                const selectedLang = button.dataset.lang;
-                if (selectedLang && selectedLang !== currentLang) {
-                    setLanguage(selectedLang);
-                    currentLang = selectedLang;
-                    localStorage.setItem('lang', currentLang);
-                    updateButtonState(selectedLang);
-                }
-            }
+        languageSelector.addEventListener('click', () => {
+            const newLang = currentLang === 'en' ? 'es' : 'en';
+            setLanguage(newLang);
+            currentLang = newLang;
+            localStorage.setItem('lang', currentLang);
+            updateButtonState(newLang);
         });
     }
 
@@ -60,14 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateButtonState(lang) {
-        if (languageSelector) {
-            languageSelector.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            const selectedButton = document.querySelector(`.lang-btn[data-lang="${lang}"]`);
-            if (selectedButton) {
-                selectedButton.classList.add('active');
-            }
+        const langLabel = document.getElementById('lang-label');
+        if (langLabel) {
+            langLabel.textContent = lang.toUpperCase();
         }
     }
 
@@ -83,11 +73,26 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
+    const scrollTopBtn = document.getElementById('scroll-top-btn');
+
     window.onscroll = () => {
         if (menuWrapper) {
             menuWrapper.classList.remove('active');
         }
+        if (scrollTopBtn) {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        }
     };
+
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     const toggleButtons = document.querySelectorAll('.plan-toggle .toggle-btn');
     const monthlyElements = document.querySelectorAll('.monthly-price, .plan-card .price .monthly-price span, .plan-card .features h4');
