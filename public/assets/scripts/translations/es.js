@@ -88,7 +88,7 @@ const translationsES = {
         "heading": "Nuestro Equipo",
         "role": "Ingeniero de Software",
         "member1": "Estudiante de Ingeniería de Software con pasión por la ciberseguridad y la IA. Mi principal fortaleza es liderar equipos de manera efectiva. Soy una persona perseverante y dedicada, siempre lista para aprender y entregar un proyecto exitoso.",
-        "member2": "Estudiante de Ingeniería de Software. Soy un jugador de equipo colaborativo y adaptable que disfruta contribuyendo con ideas a los proyectos. Tengo una base sólida en lenguajes como C++ y Python y siempre busco soluciones eficientes y simples.",
+        "member2": "Estudiante de Ingeniería de Software enfocado en crear soluciones eficientes y escalables. Destaco por mi rápida adaptación, trabajo en equipo y proactividad. Resuelvo problemas complejos mediante código limpio, respaldado por sólidas bases en C++ y Python.",
         "member3": "Estudiante de Ingeniería de Software con experiencia en desarrollo web y móvil. Enfocado en construir sistemas escalables con buenas prácticas de arquitectura y tecnologías modernas. Apasionado por la innovación y la creación de soluciones digitales con impacto.",
         "member4": "Un individuo puntual, responsable y orientado a objetivos con experiencia en gestión de proyectos y desarrollo web. Estoy enfocado en contribuir con mis conocimientos para que este proyecto sea un éxito.",
         "member5": "Estudiante de Ingeniería de Software en séptimo ciclo en la UPC. Persona empática y comunicativa, con facilidad para el trabajo en equipo. Disfruta la música, los videojuegos y el deporte, con actitud positiva y enfoque en su desarrollo personal.",
