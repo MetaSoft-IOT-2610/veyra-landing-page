@@ -731,7 +731,7 @@ body[data-lang-active="es"] [data-lang="es"] { display: revert; }
 
 .card-content {
     padding: 3rem;
-    text-align: left;
+    text-align: center;
 }
 
 .card-content h3 {
