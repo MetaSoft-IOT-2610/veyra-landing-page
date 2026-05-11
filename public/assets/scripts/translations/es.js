@@ -76,9 +76,9 @@ const translationsES = {
     },
     "about": {
         "button": "Acerca de Nosotros",
-        "heading1": "NovaPeru Tech:",
+        "heading1": "Metasoft:",
         "heading2": "Transformando el Cuidado de Adultos Mayores con Confianza e Innovación",
-        "p1": "En NovaPeru Tech, creemos en una nueva era del cuidado de adultos mayores. Proporcionamos una plataforma que combina tecnología avanzada con un enfoque centrado en el ser humano, asegurando que las familias tengan acceso seguro y actualizado a la información sobre sus seres queridos, y las instituciones cuenten con herramientas avanzadas para optimizar sus procesos.",
+        "p1": "En Metasoft, creemos en una nueva era del cuidado de adultos mayores. Proporcionamos una plataforma que combina tecnología avanzada con un enfoque centrado en el ser humano, asegurando que las familias tengan acceso seguro y actualizado a la información sobre sus seres queridos, y las instituciones cuenten con herramientas avanzadas para optimizar sus procesos.",
         "p2": "Nuestro propósito es crear un puente digital entre familias y cuidadores, fomentando la transparencia y la tranquilidad.",
         "list1": "Comunicación Fluida: Canales directos y seguros para familias y personal.",
         "list2": "Información en Tiempo Real: Acceso instantáneo a registros clínicos, tratamientos y actividades diarias.",
@@ -167,6 +167,12 @@ const translationsES = {
         "legal": {
             "terms": "Términos de Servicio",
             "privacy": "Política de Privacidad"
+        },
+        "stores": {
+            "appstore_small": "Descargar en",
+            "appstore": "App Store",
+            "googleplay_small": "Disponible en",
+            "googleplay": "Google Play"
         }
     }
 };
