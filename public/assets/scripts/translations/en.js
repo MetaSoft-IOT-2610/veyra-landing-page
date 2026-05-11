@@ -76,9 +76,9 @@ const translationsEN = {
     },
     "about": {
         "button": "About Us",
-        "heading1": "NovaPeru Tech:",
+        "heading1": "Metasoft:",
         "heading2": "Transforming Elder Care with Trust and Innovation",
-        "p1": "At NovaPeru Tech, we believe in a new era of elder care. We provide a platform that combines advanced technology with a human-centered approach, ensuring families have secure, up-to-date access to information about their loved ones, and institutions have advanced tools to optimize their processes.",
+        "p1": "At Metasoft, we believe in a new era of elder care. We provide a platform that combines advanced technology with a human-centered approach, ensuring families have secure, up-to-date access to information about their loved ones, and institutions have advanced tools to optimize their processes.",
         "p2": "Our purpose is to create a digital bridge between families and caregivers, fostering transparency and peace of mind.",
         "list1": "Seamless Communication: Direct and secure channels for families and staff.",
         "list2": "Real-Time Insights: Instant access to clinical records, treatments, and daily activities.",
@@ -167,6 +167,12 @@ const translationsEN = {
         "legal": {
             "terms": "Terms of Service",
             "privacy": "Privacy Policy"
+        },
+        "stores": {
+            "appstore_small": "Download on the",
+            "appstore": "App Store",
+            "googleplay_small": "Get it on",
+            "googleplay": "Google Play"
         }
     }
     
