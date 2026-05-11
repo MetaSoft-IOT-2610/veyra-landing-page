@@ -1544,4 +1544,42 @@ body[data-lang-active="es"] [data-lang="es"] { display: revert; }
         font-size: 3rem;
     }
 }
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
 
+.store-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    padding: 10px 16px;
+    background: #111827;
+    color: white;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.store-btn:hover {
+    transform: translateY(-2px);
+    background: #1f2937;
+}
+
+.store-btn i {
+    font-size: 26px;
+}
+
+.store-btn span {
+    display: block;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.store-btn strong {
+    font-size: 15px;
+    font-weight: 600;
+}
